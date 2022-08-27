@@ -68,6 +68,8 @@ export class ComparadorImagensComponent implements OnInit {
 
     this.preparacion_eventos_DOM_abril_2022();
 
+    // ??    setTimeout(() => { },500);
+    
     this.canvasDesenha(this.fonte_image_1);
 
   }
@@ -76,7 +78,7 @@ export class ComparadorImagensComponent implements OnInit {
     this.fonte_image_1="";
     this.fonte_image_2="";
 
-    this.id_image_1="";
+    this.id_image_1=this.id+"-image-1";
     this.id_image_2="";
     
     this.x = 0;
@@ -251,7 +253,7 @@ preparacion_elementos_DOM_abril_2022(): void {
   
   canvasDesenha(texto_canvas:string): void {
    
-    this.canvas = document.getElementById("canvas");   
+    this.canvas = document.getElementById(this.id_image_1);   
     
     const ctx = this.canvas.getContext('2d');
 
