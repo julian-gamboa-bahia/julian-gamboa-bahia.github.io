@@ -68,7 +68,7 @@ ngOnInit() {
 avanco_certificados_automatico(entrada:number)
 {
   //console.log("avanco_certificados_automatico "+entrada);
-  setInterval(() => { this.avanco_certificados(entrada); }, 3*1000); 
+  setInterval(() => { this.avanco_certificados(entrada); }, 10*1000); 
 
 }
 
@@ -147,7 +147,8 @@ keyEvent(event: KeyboardEvent) {
 
   getUrl_imagem_METODO() {
     this.getFotosBucketService.getUrl_imagem(this.etiqueta).subscribe((url_foto: String[]) => {
-      this.imagem = url_foto.reverse();    
+      //this.imagem = url_foto.reverse();    
+      this.imagem = url_foto;    
       this.maximo_indice_imagen=url_foto.length;  
       
     });
