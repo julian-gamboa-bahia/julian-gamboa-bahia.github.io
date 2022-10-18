@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/github-bahia/Desktop/julian-gamboa-bahia.github.io/fonte-angular/src/polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! /home/julian/Desktop/ensino-aula-angular-net-2022/apagar/julian-gamboa-ensino.github.io/fonte-janela-dupla/src/polyfills.ts */"hN/g");
 
 
 /***/ }),
